@@ -1,0 +1,2 @@
+SELECT concat(contactFirstName,'',contactLastName) as Employee_name ,creditLimit from customers WHERE customerNumber 
+IN (SELECT customerNumber from customers WHERE creditLimit between 10000 AND 30000  ) 
