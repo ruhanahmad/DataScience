@@ -1,0 +1,11 @@
+pandas
+numpy
+keras
+matplotlib
+seaborn
+bokeh
+plotly
+scipy
+statmodels
+scikit-learn
+pytorch
