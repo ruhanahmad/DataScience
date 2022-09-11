@@ -51,21 +51,21 @@ model = RandomForestRegressor(max_depth=max_depth,n_estimators=n_estimators)
  
 # # machine learning model
 
-X= df['age']
-y = df['fare'] 
+X= df[[input_features]]
+y = df[['fare']] 
 
 model.fit(X,y)
 pred = model.predict(y)
 
 
-## Display metrices
+# Display metrices
 
 display.subheader("mean absolute error")
 display.write(mean_absolute_error(y,pred))
 display.subheader("mean squareerror")
 display.write(mean_squared_error(y,pred))
 display.subheader("R squared score") 
-display.write(r2_score(y,pred))
+display.write(r2_score(y,pred)) 
 
 
 
